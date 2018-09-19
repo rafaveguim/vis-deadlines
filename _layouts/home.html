@@ -92,25 +92,27 @@
         {% for conf in site.data.conferences %}
         
         // adjust date according to deadline timezone
+        var localTimeZone = moment.tz.guess();
         var timezone = {% if conf.timezone %}"{{conf.timezone}}" {% else %} "America/New_York" {% endif %};
+        var dateFormat = "MMMM Do YYYY, h:mm:ss a z"
 
         {% if conf.abstract_deadline == "" %}
           $('#{{conf.id}} .abstract-deadline').html("");
         {% else %}
-          var abstractDate = moment.tz("{{conf.abstract_deadline}}", timezone);
-          $('#{{conf.id}} .abstract-time').html(abstractDate.toString());
+          var abstractDate = moment.tz("{{conf.abstract_deadline}}", timezone).clone().tz(localTimeZone);
+          $('#{{conf.id}} .abstract-time').html(abstractDate.format(dateFormat));
         {% endif %}
         {% if conf.deadline == "TBA" %}
           $('#{{conf.id}} .timer').html("TBA");
           $('#{{conf.id}} .deadline-time').html("TBA");
         {% else %}
-          var confDate = moment.tz("{{conf.deadline}}", timezone);
+          var confDate = moment.tz("{{conf.deadline}}", timezone).clone().tz(localTimeZone);
 
           // render countdown timer
           $('#{{conf.id}} .timer').countdown(confDate.toDate(), function(event) {
             $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
           });
-          $('#{{conf.id}} .deadline-time').html(confDate.toString());
+          $('#{{conf.id}} .deadline-time').html(confDate.format(dateFormat));
 
           // add calendar button
           var myCalendar = createCalendar({
