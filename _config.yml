@@ -4,7 +4,7 @@ description: Countdowns to top VIS conference deadlines
 author: Rafael Veras
 
 domain: "rafaveguim.github.io"
-baseurl: "/vis-deadlines"
+baseurl: ""
 
 twitter_username: rafaveguim
 twitter_hashtag: #vis
