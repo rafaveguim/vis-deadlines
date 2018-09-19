@@ -1,10 +1,33 @@
 ---
 
+- name: CHI
+  year: 2019
+  id: chi19
+  link: https://chi2018.acm.org
+  deadline: "2018-09-21 12:00:00"
+  abstract_deadline: "2018-09-14 12:00:00"
+  timezone: America/Los_Angeles
+  date: May 4-9, 2019
+  place: Glasgow, UK
+  sub: HCI
+
+- name: PACIFIC VIS
+  year: 2019
+  id: pacificvis19
+  link: https://www.eurovis.org
+  deadline: "2018-10-05 09:00:00"
+  abstract_deadline: "2018-09-28 09:00:00"
+  timezone: America/Los_Angeles
+  date: April 23-26, 2019
+  place: Bangkok, Thailand
+  sub: VIS
+
 - name: EUROVIS
   year: 2019
   id: eurovis19
   link: https://www.eurovis.org
-  deadline: "2018-12-05 23:59:59"
+  deadline: "2018-12-12 23:59:59"
+  abstract_deadline: "2018-12-05 23:59:59"
   timezone: GMT
   date: June 3-7, 2019
   place: Porto, Portugal

@@ -66,8 +66,13 @@
               </div>
               <div class="col-xs-12 col-sm-6">
                 <span class="timer"></span>
+                <div class="abstract-deadline">
+                  <div>Deadline (Abstract):
+                    <span class="abstract-time"></span>
+                  </div>
+                </div>
                 <div class="deadline">
-                  <div>Deadline:
+                  <div>Deadline (Final):
                     <span class="deadline-time"></span>
                   </div>
                 </div>
@@ -85,12 +90,20 @@
     <script type="text/javascript" charset="utf-8">
     $(function() {
         {% for conf in site.data.conferences %}
+        
+        // adjust date according to deadline timezone
+        var timezone = {% if conf.timezone %}"{{conf.timezone}}" {% else %} "America/New_York" {% endif %};
+
+        {% if conf.abstract_deadline == "" %}
+          $('#{{conf.id}} .abstract-deadline').html("");
+        {% else %}
+          var abstractDate = moment.tz("{{conf.abstract_deadline}}", timezone);
+          $('#{{conf.id}} .abstract-time').html(abstractDate.toString());
+        {% endif %}
         {% if conf.deadline == "TBA" %}
           $('#{{conf.id}} .timer').html("TBA");
           $('#{{conf.id}} .deadline-time').html("TBA");
         {% else %}
-          // adjust date according to deadline timezone
-          var timezone = {% if conf.timezone %}"{{conf.timezone}}" {% else %} "America/New_York" {% endif %};
           var confDate = moment.tz("{{conf.deadline}}", timezone);
 
           // render countdown timer

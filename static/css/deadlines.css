@@ -98,7 +98,7 @@ footer {
   opacity: 0.5;
 }
 
-.deadline, .meta {
+.deadline, .abstract-deadline, .meta {
   font-size: 13px;
 }
 
