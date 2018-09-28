@@ -1,14 +1,25 @@
 ---
 
-- name: CHI
+- name: IVAPP
   year: 2019
-  id: chi19
-  link: https://chi2018.acm.org
-  deadline: "2018-09-21 12:00:00"
-  abstract_deadline: "2018-09-14 12:00:00"
-  timezone: America/Los_Angeles
-  date: May 4-9, 2019
-  place: Glasgow, UK
+  id: ivapp2019
+  link: http://ivapp.visigrapp.org/
+  deadline: "2018-10-01 24:00:00"
+  abstract_deadline: "2018-10-01 24:00:00"
+  timezone: GMT
+  date: Febuary 25-27, 2019
+  place: Prague, Czech Republic
+  sub: VIS
+
+- name: IUI
+  year: 2019
+  id: iui19
+  link: https://iui.acm.org/2019
+  deadline: "2018-10-08 23:59:59"
+  abstract_deadline: "2018-10-01 23:59:59"
+  timezone: UTC-12
+  date: March 17-20, 2019
+  place: Los Angeles, USA
   sub: HCI
 
 - name: PACIFIC VIS
@@ -31,15 +42,4 @@
   timezone: GMT
   date: June 3-7, 2019
   place: Porto, Portugal
-  sub: VIS
-
-- name: IVAPP
-  year: 2019
-  id: ivapp2019
-  link: http://ivapp.visigrapp.org/
-  deadline: "2018-10-01 24:00:00"
-  abstract_deadline: "2018-10-01 24:00:00"
-  timezone: GMT
-  date: Febuary 25-27, 2019
-  place: Prague, Czech Republic
   sub: VIS
