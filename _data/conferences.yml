@@ -11,17 +11,6 @@
   place: Prague, Czech Republic
   sub: VIS
 
-- name: IUI
-  year: 2019
-  id: iui19
-  link: https://iui.acm.org/2019
-  deadline: "2018-10-08 23:59:59"
-  abstract_deadline: "2018-10-01 23:59:59"
-  timezone: UTC-12
-  date: March 17-20, 2019
-  place: Los Angeles, USA
-  sub: HCI
-
 - name: PACIFIC VIS
   year: 2019
   id: pacificvis19
@@ -32,6 +21,17 @@
   date: April 23-26, 2019
   place: Bangkok, Thailand
   sub: VIS
+
+- name: IUI
+  year: 2019
+  id: iui19
+  link: https://iui.acm.org/2019
+  deadline: "2018-10-08 23:59:59"
+  abstract_deadline: "2018-10-01 23:59:59"
+  timezone: UTC-12
+  date: March 17-20, 2019
+  place: Los Angeles, USA
+  sub: HCI
 
 - name: EUROVIS
   year: 2019
