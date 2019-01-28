@@ -33,7 +33,7 @@
   place: Los Angeles, USA
   sub: HCI
 
-- name: EUROVIS
+- name: EUROVIS (full papers)
   year: 2019
   id: eurovis19
   link: https://www.eurovis.org
@@ -43,3 +43,36 @@
   date: June 3-7, 2019
   place: Porto, Portugal
   sub: VIS
+  
+  - name: EUROVIS (STAR reports)
+  year: 2019
+  id: eurovis19
+  link: https://www.eurovis.org
+  deadline: "2019-02-01 24:00:00"
+  abstract_deadline: "2018-10-14 24:00:00"
+  timezone: GMT
+  date: June 3-7, 2019
+  place: Porto, Portugal
+  sub: VIS
+
+- name: EUROVIS (short papers)
+  year: 2019
+  id: eurovis19
+  link: https://www.eurovis.org
+  deadline: "2019-02-28 24:00:00"
+  timezone: GMT
+  date: June 3-7, 2019
+  place: Porto, Portugal
+  sub: VIS
+
+- name: EUROVIS (posters)
+  year: 2019
+  id: eurovis19
+  link: https://www.eurovis.org
+  deadline: "2019-04-07 24:00:00"
+  timezone: GMT
+  date: June 3-7, 2019
+  place: Porto, Portugal
+  sub: VIS
+
+  
