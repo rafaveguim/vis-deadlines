@@ -21,6 +21,17 @@
   place: Porto, Portugal
   sub: VIS
 
+- name: VIS
+  year: 2019
+  id: vis19
+  link: http://ieeevis.org/year/2019/welcome
+  deadline: "2019-03-31 17:00:00"
+  abstract_deadline: "2019-03-21 17:00:00"
+  timezone: America/Los_Angeles
+  date: October 20-25, 2019
+  place: Vancouver, Canada
+  sub: VIS
+
 - name: EUROVIS (posters)
   year: 2019
   id: eurovis19_posters
