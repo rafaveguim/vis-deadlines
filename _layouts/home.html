@@ -96,7 +96,7 @@
         var timezone = {% if conf.timezone %}"{{conf.timezone}}" {% else %} "America/New_York" {% endif %};
         var dateFormat = "MMMM Do YYYY, h:mm:ss a z"
 
-        {% if conf.abstract_deadline == "" %}
+        {% if conf.abstract_deadline == "" or conf.abstract_deadline == undefined %}
           $('#{{conf.id}} .abstract-deadline').html("");
         {% else %}
           var abstractDate = moment.tz("{{conf.abstract_deadline}}", timezone).clone().tz(localTimeZone);
