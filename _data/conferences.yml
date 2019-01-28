@@ -2,42 +2,42 @@
 
 - name: EUROVIS (STAR reports)
   year: 2019
-  id: eurovis19
+  id: eurovis19_star
   link: https://www.eurovis.org
-  deadline: "2019-02-01 23:59:59"
-  abstract_deadline: "2018-10-14 23:59:59"
-  timezone: GMT
+  deadline: "2019-02-01 24:00:00"
+  abstract_deadline: '2018-10-14 24:00:00'
+  timezone: Etc/GMT
   date: June 3-7, 2019
   place: Porto, Portugal
   sub: VIS
 
 - name: EUROVIS (short papers)
   year: 2019
-  id: eurovis19
+  id: eurovis19_short
   link: https://www.eurovis.org
-  deadline: "2019-02-28 23:59:59"
-  timezone: GMT
+  deadline: "2019-02-28 24:00:00"
+  timezone: Etc/GMT
   date: June 3-7, 2019
   place: Porto, Portugal
   sub: VIS
 
 - name: EUROVIS (posters)
   year: 2019
-  id: eurovis19
+  id: eurovis19_posters
   link: https://www.eurovis.org
-  deadline: "2019-04-07 23:59:59"
-  timezone: GMT
+  deadline: "2019-04-07 24:00:00"
+  timezone: Etc/GMT
   date: June 3-7, 2019
   place: Porto, Portugal
   sub: VIS
 
 - name: EUROVIS (full papers)
   year: 2019
-  id: eurovis19
+  id: eurovis19_full
   link: https://www.eurovis.org
-  deadline: "2018-12-12 23:59:59"
-  abstract_deadline: "2018-12-05 23:59:59"
-  timezone: GMT
+  deadline: "2018-12-12 24:00:00"
+  abstract_deadline: "2018-12-05 24:00:00"
+  timezone: Etc/GMT
   date: June 3-7, 2019
   place: Porto, Portugal
   sub: VIS
